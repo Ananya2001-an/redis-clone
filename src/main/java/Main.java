@@ -44,10 +44,8 @@ public class Main {
                 if ("ping".equalsIgnoreCase(content)) {
                     writer.write("+PONG\r\n");
                     writer.flush();
-                    break;
                 } else if ("eof".equalsIgnoreCase(content)) {
                     System.out.println("eof");
-                    break;
                 }
             }
         } catch (IOException e) {
